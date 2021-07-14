@@ -5,7 +5,6 @@ import Home from "../views/Home/Home"
 import Login from "../views/Login/Login"
 import User from "../views/User/User"
 import Hooks from "../views/Hooks/hooks"
-import Increase from "../views/Increase/increase"
 
 // react中路由使用组件实现, vue中是对象
 export default function MyRouter(){
@@ -19,7 +18,6 @@ export default function MyRouter(){
             {/* 模糊匹配路由路径, 动态url传参 */}
             <Route path="/user/:name" component={User} />
             <Route path="/hooks" component={Hooks} />
-            <Route path="/increase" component={Increase} />
         </Switch>
     )
 }
